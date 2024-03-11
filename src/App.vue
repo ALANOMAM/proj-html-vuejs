@@ -32,7 +32,9 @@ export default{
           elements:["Membership","Purchase guide","Privacy policy","Terms of service"]
         }
 
-      ]
+      ],
+
+      footerSocials:["../../public/images/footer-facebook.png","../../public/images/footer-youtube.png","../../public/images/footer-twitter.png","../../public/images/footer-pinterest.png"],
     }
   }
 }
@@ -41,7 +43,7 @@ export default{
 <template>
   <Header :options1="headerOptions"></Header>
   <Main></Main>
-  <Footer :options2="footerOptions"></Footer>
+  <Footer :options2="footerOptions" :socialOptions2="footerSocials"></Footer>
 </template>
 
 <style>
