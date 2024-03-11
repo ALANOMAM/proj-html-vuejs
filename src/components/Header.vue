@@ -2,7 +2,7 @@
 export default{
    name:"Header",
    props:{
-     options: Array,
+     options1: Array,
    },
 
   data(){
@@ -18,7 +18,7 @@ export default{
    <div class="nav">
     <!--lista opzioni generata tramite props-->
     <ul>
-        <li v-for="option in options">{{ option }} <i class="fa-solid fa-chevron-down"></i> </li>
+        <li v-for="option1 in options1">{{ option1 }} <i class="fa-solid fa-chevron-down"></i> </li>
     </ul>
 
      <img src="../../public/images/dark-logo.png" alt="">

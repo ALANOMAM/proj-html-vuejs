@@ -39,9 +39,9 @@ export default{
 </script>
 
 <template>
-  <Header :options="headerOptions"></Header>
+  <Header :options1="headerOptions"></Header>
   <Main></Main>
-  <Footer></Footer>
+  <Footer :options2="footerOptions"></Footer>
 </template>
 
 <style>
