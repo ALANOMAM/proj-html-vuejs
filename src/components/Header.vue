@@ -18,7 +18,7 @@ export default{
    <div class="nav">
     <!--lista opzioni generata tramite props-->
     <ul>
-        <li v-for="option in options">{{ option }}</li>
+        <li v-for="option in options">{{ option }} <i class="fa-solid fa-chevron-down"></i> </li>
     </ul>
 
      <img src="../../public/images/dark-logo.png" alt="">
@@ -39,11 +39,13 @@ export default{
 
 <style scoped lang="scss">
 
+
 header{
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
 
 .nav{
     
@@ -61,6 +63,12 @@ header{
         gap: 30px;
         list-style-type: none;
 
+        li{
+            i{
+                font-size: 10px;
+            }
+        }
+
     }
 
     img{
@@ -73,7 +81,31 @@ header{
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-    }
-}
 
+        input{
+            padding: 10px;
+            border-radius: 4px;
+            border-bottom-right-radius: 0;
+            border-top-right-radius:0;
+            border-right:none ;
+            background-color: rgba(245, 245, 245, 1);
+            border: 1px solid rgba(245, 245, 245, 1);
+        }
+
+        button{
+            padding: 10px;
+            border-left: none;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius:4px;
+            background-color: rgba(245, 245, 245, 1);
+            border: 1px solid rgba(245, 245, 245, 1);
+        
+
+          i{
+            color: rgba(32, 173, 150, 1);
+          } 
+        }
+    }
+
+}
 </style>
