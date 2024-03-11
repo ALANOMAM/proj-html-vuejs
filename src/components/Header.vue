@@ -1,6 +1,10 @@
 <script>
 export default{
    name:"Header",
+   props:{
+     options: Array,
+   },
+
   data(){
     return{
 
@@ -10,7 +14,13 @@ export default{
 </script>
 
 <template>
-  <h1>header</h1>
+   <div class="nav">
+    <!--lista opzioni generata tramite props-->
+    <ul>
+        <li v-for="option in options">{{ option }}</li>
+    </ul>
+
+   </div>
 </template>
 
 <style>

@@ -12,6 +12,7 @@ export default{
 
   data(){
     return{
+      headerOptions:["Home","Pages","Courses","Features","Blog","Shop"],
 
     }
   }
@@ -19,7 +20,7 @@ export default{
 </script>
 
 <template>
-  <Header></Header>
+  <Header :options="headerOptions"></Header>
   <Main></Main>
   <Footer></Footer>
 </template>
