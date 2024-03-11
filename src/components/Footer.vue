@@ -19,7 +19,19 @@ export default{
   <footer>
 
  <div class="top-footer">
- 7
+
+   <div class="top-container">
+  <h2> Subscribe <span>Newsletters</span></h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  blanditiis autem, 
+    numquam est! Distinctio ad modi ullam 
+    deserunt voluptate officiis itaque nulla enim odit.</p>
+   <div>
+    <input type="search" placeholder="Enter your email">
+    <button>Subscribe</button>
+   </div>
+
+    </div>
+
  </div>   
 
 
@@ -49,15 +61,74 @@ export default{
 </div>
 
 </footer>
-
+b
 </template>
 
 <style lang="scss" scoped>
 
+.top-footer{
+
+    background-color: white;
+
+    .top-container{
+        padding-bottom: 60px;
+        padding-top: 60px ;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+   background-image: url("../../public/images/maxcoach-shape-02.png"),url("../../public/images/maxcoach-shape-05.png"),url();
+   background-position: right bottom , right center;
+   background-size: 100px , 100px;
+   background-repeat: no-repeat, no-repeat;
+
+        p{
+            text-align: center;
+        }
+    }
+     h2{
+      color:black;
+      font-size: 25px;
+     }
+
+     p{
+        color:black ;
+        max-width: 800px;
+     }
+    span{
+        color:rgba(32, 173, 150, 1);
+    }
+
+    input{
+        padding-right: 200px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        padding-left:10px ;
+        background-color: rgba(245, 245, 245, 1);
+        border: 1px solid rgba(245, 245, 245, 1);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    button{
+        padding:10px;
+        color: white;
+        background-color:rgba(32, 173, 150, 1) ;
+        border: 1px solid rgba(32, 173, 150, 1);
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+
 .bottom-footer{
     background-color: rgba(23, 22, 33, 1);
     padding: 30px;
-}
+
 
 .footer-nav{
     max-width: 900px;
@@ -102,4 +173,5 @@ export default{
     }
 }
 
+}
 </style>
