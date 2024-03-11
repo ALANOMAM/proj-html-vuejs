@@ -1,6 +1,11 @@
 <script>
 export default{
    name:"Footer",
+
+   props:{
+    Options:Array,
+   },
+
   data(){
     return{
 
@@ -10,10 +15,14 @@ export default{
 </script>
 
 <template>
-<h1>footer</h1>
+
+ <div class="footer-nav">
+
+ </div>
+
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 
 </style>
