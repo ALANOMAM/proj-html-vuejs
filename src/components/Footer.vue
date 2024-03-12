@@ -66,6 +66,7 @@ b
 
 <style lang="scss" scoped>
 
+/*top footer inizio*/
 .top-footer{
 
     background-color: white;
@@ -123,8 +124,9 @@ b
         border-bottom-left-radius: 0;
     }
 }
+/*top footer fine*/
 
-
+/*bottom footer inizio*/
 .bottom-footer{
     background-color: rgba(23, 22, 33, 1);
     padding: 30px;
@@ -174,4 +176,5 @@ b
 }
 
 }
+/*bottom footer fine*/
 </style>

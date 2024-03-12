@@ -15,6 +15,8 @@ export default{
 
 <template>
     <header>
+      <!--top header start-->  
+     <div class="top-header"> 
    <div class="nav">
     <!--lista opzioni generata tramite props-->
     <ul>
@@ -34,6 +36,18 @@ export default{
    </div>
 
    </div>
+   </div>
+   <!--top header end--> 
+
+   <!--bottom header start-->
+   <div class="bottom-header">
+   <span>Commence Business</span>
+   <h1>Distant Mentoring Program</h1>
+   <button>Download Free Guidebook</button>
+   </div>
+   <!--bottom header end-->
+
+
 </header>
 </template>
 
@@ -41,14 +55,22 @@ export default{
 
 
 header{
+    height: 500px;
+    background-image: url("../../public/images/home-3-hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.top-header{
+   /* border: 1px solid blue;*/
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-
+/*nav start*/
 .nav{
-    
+    /*border:1px solid red;*/
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -108,4 +130,8 @@ header{
     }
 
 }
+/*nav end*/
+
+
+
 </style>
