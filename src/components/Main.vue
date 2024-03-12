@@ -5,15 +5,27 @@ export default{
     return{
         latestBlogs:[
            {
-
+             image:"../../public/images/artist-blog-03-480x325.jpeg",
+             work:"ARTIST",
+             description:"Brush Strokes Energize Trees in Painting",
+             date:" May 15,2020",
+             views:"688 views"
            },
 
            {
-
+            image:"../../public/images/artist-blog-01-480x325.jpg",
+             work:"ARTIST",
+             description:"Pocket-Sized Notebooks Hold Miniature Paintings",
+             date:" May 25,2020",
+             views:"608 views"
            },
-           
-           {
 
+           {
+            image:"../../public/images/artist-blog-02-480x325.jpg",
+             work:"ARTIST",
+             description:"Connection Between Self-Portraits and Identity",
+             date:" Feb 15,2022",
+             views:"300 views"
            }
 
         ]
@@ -105,27 +117,18 @@ export default{
 
 <div class="artist-box">
 
-<div class="artists">
-<img src="../../public/images/artist-blog-03-480x325.jpeg" alt="">
-<span>ARTIST</span>
-<P>Brush Strokes Energize Trees in Painting</P>
+<div v-for="blog in latestBlogs"  class="artists">
+<img :src="blog.image" alt="">
+<span>{{ blog.work }}</span>
+<P>{{blog.description }}</P>
 
 <div class="stats">
-<span><i class="fa-regular fa-calendar"></i> May 15,2020</span>
-<span><i class="fa-regular fa-eye"></i> 688 views</span>
+<span><i class="fa-regular fa-calendar"></i>{{ blog.date }}</span>
+<span><i class="fa-regular fa-eye"></i>{{blog.views}}</span>
 </div>
 </div>
 
-<div class="artists">
-<img src="../../public/images/artist-blog-03-480x325.jpeg" alt="">
-<span>ARTIST</span>
-<P>Brush Strokes Energize Trees in Painting</P>
 
-<div class="stats">
-<span><i class="fa-regular fa-calendar"></i> May 15,2020</span>
-<span><i class="fa-regular fa-eye"></i> 688 views</span>
-</div>
-</div>
 
 </div>
 
@@ -295,12 +298,10 @@ export default{
 
     .artist-box{
     display: flex;
-    justify-content: space-between;
     .artists{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-
+        gap:10px;
         img{
             width: 250px;  
         }
