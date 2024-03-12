@@ -50,6 +50,40 @@ export default{
 
 
 
+<!--box 4 start -->
+<div class="box4">
+    <div class="left">
+        <span>TESTIMONIALS</span>
+        <h2>Why Do People Hearts Us?</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
+        <span> <b>View all <i class="fa-solid fa-arrow-right"></i></b> </span>
+    </div>
+
+    <div class="right">
+    <img src="../../public/images/testimonial-avata-01.jpg" alt="">
+   <img src="../../public/images/testimonial-avata-02.jpg" alt="">
+    </div>
+ </div>
+<!--box 4 end -->
+
+
+<!--box 5 start-->
+<div class="box5">
+    <div class="left"> 
+     <img src="../../public/images/home-3-team-image-300x278.png" alt="">
+    </div>
+
+    <div class="right">
+        <span> EVERYTHING IN MAXCOACH</span>
+        <h2>We'er Here To Transform You!</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
+        <button>Get Free Guide</button>
+    </div>
+</div>
+<!--box 5 end-->
+
+
+
 </div>
 <!--container end-->  
 </main>
@@ -137,6 +171,72 @@ export default{
 /*box 2 end*/
 /*------------------------------------------------------------------------------------------*/
 
+/*box4 start*/
+.box4{
+    border: 1px solid red;
+    display: flex;
+    
+/*left side start*/
+.left{
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+
+}
+/*left side end*/
+
+
+    /*right side start*/
+    .right{
+       /* border: 1px solid red;
+        position: relative;
+        padding: 20px;
+        img:nth-child(1){
+           width: 350px;
+           height: auto;
+        }
+
+        img:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+           width: 130px;
+           height: auto;
+        }*/
+    } 
+    /*right side end*/
+}
+/*box4 end*/
+/*--------------------------------------------------------------------------------------------*/
+/*box 5 start*/
+.box5{
+ border: 1px solid red;
+ padding-top: 30px;
+ padding-bottom: 30px;
+  display: flex;
+  gap: 40px;
+
+
+   .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    button{
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color:rgba(32, 173, 150, 1) ;
+        color:white;
+        border: 1px solid rgba(32, 173, 150, 1);
+    }
+
+   }
+   
+}
+/*box 5 end*/
 
 </style>
