@@ -14,14 +14,13 @@ export default{
 <main>
  <!--container start-->   
 <div class="container">
-
+ <!--box 1 start -->
  <div class="box1">
     <div class="left">
         <span>EVERYTHING IN MAXCOACH</span>
         <h2>Learn about Work Culture at MaxCoach</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
-
-
+        <span>Have questions? <b>Get Free Guide <i class="fa-solid fa-arrow-right"></i></b> </span>
     </div>
 
     <div class="right">
@@ -30,6 +29,25 @@ export default{
     </div>
    
  </div>
+<!--box 1 end -->
+
+<div class="box2">
+
+    <div class="left">
+      <img src="../../public/images/icon-youtube-play.png" alt="">   
+     <img src="../../public/images/stock-full-hd-11-670x450.jpg" alt="">
+    </div>
+
+
+    <div class="right">
+        <span>HOW WE WORK</span>
+        <h2>Upgrade Your Skills Upgrade Your Life</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
+        <span>Download <b>free guideback <i class="fa-solid fa-arrow-right"></i></b> </span>
+    </div>
+
+</div>
+
 
 </div>
 <!--container end-->  
@@ -47,9 +65,18 @@ export default{
 
 /*box1 start*/
 .box1{
+    display: flex;
+    justify-content: space-between;
     
     /*left side start*/
 .left{
+    padding-top: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
 
 }
     /*left side end*/
@@ -77,6 +104,25 @@ export default{
 }
 /*box1 end*/
 
+
+.box2{
+  display: flex;
+  
+   .left{
+
+    position: relative;
+    img:nth-child(1){
+        width: 70px;
+        position: absolute;
+    
+    }
+
+    img:nth-child(2){
+        width: 450px;
+    }
+   }
+   
+}
 
 
 </style>
