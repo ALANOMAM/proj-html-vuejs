@@ -81,8 +81,8 @@ b
         flex-direction: column;
         align-items: center;
         gap: 20px;
-   background-image: url("../../public/images/maxcoach-shape-02.png"),url("../../public/images/maxcoach-shape-05.png"),url();
-   background-position: right bottom , right center;
+   background-image: url("../../public/images/maxcoach-shape-02.png"),url("../../public/images/maxcoach-shape-05.png");
+   background-position: right bottom , left center;
    background-size: 100px , 100px;
    background-repeat: no-repeat, no-repeat;
 

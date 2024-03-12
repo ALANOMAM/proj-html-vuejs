@@ -86,9 +86,20 @@ export default{
     </div>
 
     <div class="right">
-    <img src="../../public/images/testimonial-avata-01.jpg" alt="">
-   <img src="../../public/images/testimonial-avata-02.jpg" alt="">
+        <div class="testimonial">
+         <span><strong>Proffessional team of specialists and passionate mentors at reach</strong></span>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet esse tempore praesentium laudantium delectus nihil.</p>
+         <div class="img-description">
+         <img src="../../public/images/testimonial-avata-01.jpg" alt="">
+          <div class="description">
+         <span><strong>MADLEY PONDOR</strong></span>
+         <span>/ IT Specialist</span>
+         </div>
+         </div>
+         </div>
+   <!-- <img src="../../public/images/testimonial-avata-02.jpg" alt="">-->
     </div>
+
  </div>
 <!--box 4 end -->
 
@@ -110,7 +121,7 @@ export default{
 
 <!--box 6 start-->
 <div class="box6">
-<div>
+<div class="titolo6">
     <span>READ FOR MORE JOYMENT</span>
     <h2>Latest From Our Blogs</h2>
 </div>
@@ -124,7 +135,7 @@ export default{
 
 <div class="stats">
 <span><i class="fa-regular fa-calendar"></i>{{ blog.date }}</span>
-<span><i class="fa-regular fa-eye"></i>{{blog.views}}</span>
+<span><i class="fa-regular fa-eye"></i>{{ blog.views }}</span>
 </div>
 </div>
 
@@ -145,17 +156,27 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+main{
+    background-color: white;
+}
 .container{
+    color: black;
     border:1px solid blue;
-    max-width:850px;
+    max-width:930px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*box1 start*/
 .box1{
+    padding:40px;
+    
     border: 1px solid red;
     display: flex;
+   background-image: url("../../public/images/maxcoach-shape-02.png"),url("../../public/images/maxcoach-shape-07.png");
+   background-position: right bottom ,  center;
+   background-size: 100px , 100px;
+   background-repeat: no-repeat, no-repeat;
     
     /*left side start*/
 .left{
@@ -194,9 +215,14 @@ export default{
 /*------------------------------------------------------------------------------------------*/
 /*box 2 start*/
 .box2{
+padding:40px;  
  border: 1px solid red;
  padding-top: 30px;
  padding-bottom: 30px;
+ background-image: url("../../public/images/maxcoach-shape-01.png"),url("../../public/images/maxcoach-shape-05.png");
+   background-position: right center , left top;
+   background-size: 100px , 100px;
+   background-repeat: no-repeat, no-repeat;
   display: flex;
   gap: 40px;
 
@@ -227,6 +253,7 @@ export default{
 
 /*box4 start*/
 .box4{
+    padding:40px;
     border: 1px solid red;
     display: flex;
     
@@ -245,21 +272,31 @@ export default{
 
     /*right side start*/
     .right{
-       /* border: 1px solid red;
-        position: relative;
-        padding: 20px;
-        img:nth-child(1){
-           width: 350px;
-           height: auto;
+
+       .testimonial{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        .img-description{
+             display: flex;
+             align-items: center;
+             gap: 20px;
+
+             .description{
+               display: flex;
+               flex-direction: column;
+               gap:10px;
+             }
+
+            img{
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
         }
 
-        img:nth-child(2){
-        position: absolute;
-        top: 0;
-        right: 0;
-           width: 130px;
-           height: auto;
-        }*/
+        }
+       
+       }
     } 
     /*right side end*/
 }
@@ -267,9 +304,14 @@ export default{
 /*--------------------------------------------------------------------------------------------*/
 /*box 5 start*/
 .box5{
+ padding:40px;
  border: 1px solid red;
  padding-top: 30px;
  padding-bottom: 30px;
+ background-image: url("../../public/images/maxcoach-shape-01.png"),url("../../public/images/maxcoach-shape-05.png"),url("../../public/images/maxcoach-shape-08.png");
+   background-position: right center , left top, bottom center;
+   background-size: 100px , 100px , 100px;
+   background-repeat: no-repeat, no-repeat, no-repeat;
   display: flex;
   gap: 40px;
 
@@ -295,20 +337,33 @@ export default{
 /*------------------------------------------------------------------------------------------------------*/
 /*box 6 start*/
 .box6{
+    padding:40px;
+     .titolo6{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
 
     .artist-box{
+    margin-top: 40px;
     display: flex;
+    justify-content: space-between;
     .artists{
         display: flex;
         flex-direction: column;
         gap:10px;
+        
+        p{
+            max-width: 250px;
+        }
+        
         img{
             width: 250px;  
         }
 
         .stats{
             display: flex;
-            gap: 30px;
+            gap: 20px;
         }
         
     }
