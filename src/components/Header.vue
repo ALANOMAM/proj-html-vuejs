@@ -43,9 +43,19 @@ export default{
    <div class="bottom-header">
    <span>Commence Business</span>
    <h1>Distant Mentoring Program</h1>
-   <button>Download Free Guidebook</button>
+   <button>Download Free Guidebook <i class="fa-solid fa-arrow-right"></i></button>
    </div>
    <!--bottom header end-->
+
+    <!--header side options start-->
+    <div class="side-options">
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-regular fa-circle-xmark"></i>
+        <i class="fa-solid fa-book"></i>
+        <i class="fa-solid fa-cart-shopping"></i>   
+    </div>
+
+    <!--header side options end-->
 
 
 </header>
@@ -132,6 +142,54 @@ header{
 }
 /*nav end*/
 
+/*bottom header start*/
+.bottom-header{
+   /* border:1px solid red;*/
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  
+ span{ 
+    font-weight: bold;
+    font-size: 20px;
+ }
 
+ h1{
+     
+    font-weight:lighter;
+ }
+
+    button{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(32, 173, 150, 1);
+
+    }
+}
+/*bottom header end*/
+
+/*side options start */
+.side-options{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 30px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+i{
+    color: black;
+}
+}
+/*side options end */
 
 </style>
