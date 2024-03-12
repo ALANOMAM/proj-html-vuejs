@@ -38,16 +38,18 @@ export default{
 <template>
 
 <main>
+
+
+
  <!--container start-->   
 <div class="container">
-
  <!--box 1 start -->
  <div class="box1">
     <div class="left">
         <span>EVERYTHING IN MAXCOACH</span>
-        <h2>Learn about Work Culture at MaxCoach</h2>
+        <h2>Learn about <span class="mark">Work Culture</span> at MaxCoach</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
-        <span>Have questions? <b>Get Free Guide <i class="fa-solid fa-arrow-right"></i></b> </span>
+        <span>Have questions? <span class="mark"><b>Get Free Guide <i class="fa-solid fa-arrow-right"></i></b></span> </span>
     </div>
 
     <div class="right">
@@ -56,7 +58,14 @@ export default{
     </div>
  </div>
 <!--box 1 end -->
+</div>
+<!--container end--> 
 
+
+
+
+ <!--container start-->   
+ <div class="container">
 <!--box 2 start-->
 <div class="box2">
     <div class="left">
@@ -66,21 +75,24 @@ export default{
 
     <div class="right">
         <span>HOW WE WORK</span>
-        <h2>Upgrade Your Skills Upgrade Your Life</h2>
+        <h2>Upgrade Your Skills <span class="mark">Upgrade Your Life</span></h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
         <span>Download <b>free guideback <i class="fa-solid fa-arrow-right"></i></b> </span>
     </div>
 </div>
 <!--box 2 end-->
+</div>
+<!--container end--> 
 
 
 
-
+ <!--container start-->   
+ <div class="container">
 <!--box 4 start -->
 <div class="box4">
     <div class="left">
         <span>TESTIMONIALS</span>
-        <h2>Why Do People Hearts Us?</h2>
+        <h2>Why Do People <span class="mark">*Hearts*</span> Us?</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
         <span> <b>View all <i class="fa-solid fa-arrow-right"></i></b> </span>
     </div>
@@ -99,11 +111,15 @@ export default{
          </div>
    <!-- <img src="../../public/images/testimonial-avata-02.jpg" alt="">-->
     </div>
-
  </div>
 <!--box 4 end -->
+</div>
+<!--container end--> 
 
 
+
+ <!--container start-->   
+ <div class="container">
 <!--box 5 start-->
 <div class="box5">
     <div class="left"> 
@@ -112,18 +128,25 @@ export default{
 
     <div class="right">
         <span> EVERYTHING IN MAXCOACH</span>
-        <h2>We'er Here To Transform You!</h2>
+        <h2>We'er Here To <span class="mark">Transform</span> You!</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, iusto magni ad laudantium itaque adipisci!</p>
         <button>Get Free Guide</button>
     </div>
 </div>
 <!--box 5 end-->
+</div>
+<!--container end--> 
 
+
+
+<section class="section6">
+ <!--container start-->   
+ <div class="container">
 <!--box 6 start-->
 <div class="box6">
 <div class="titolo6">
     <span>READ FOR MORE JOYMENT</span>
-    <h2>Latest From Our Blogs</h2>
+    <h2>Latest From <span class="mark">Our Blogs</span></h2>
 </div>
 
 <div class="artist-box">
@@ -139,18 +162,14 @@ export default{
 </div>
 </div>
 
-
-
 </div>
-
-
 
 </div>
 <!--box 6 end-->
-
-
 </div>
 <!--container end-->  
+</section>
+
 </main>
 
 </template>
@@ -165,6 +184,10 @@ main{
     max-width:930px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.mark{
+    color:rgba(32, 173, 150, 1)  ;
 }
 
 /*box1 start*/
@@ -186,10 +209,8 @@ main{
     flex-direction: column;
     gap: 20px;
 
-
 }
     /*left side end*/
-
 
     /*right side start*/
     .right{
@@ -264,11 +285,8 @@ padding:40px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-
 }
 /*left side end*/
-
 
     /*right side start*/
     .right{
@@ -302,6 +320,7 @@ padding:40px;
 }
 /*box4 end*/
 /*--------------------------------------------------------------------------------------------*/
+
 /*box 5 start*/
 .box5{
  padding:40px;
@@ -335,6 +354,9 @@ padding:40px;
 }
 /*box 5 end*/
 /*------------------------------------------------------------------------------------------------------*/
+.section6{
+    background-color:rgba(248, 248, 248, 1) ;
+}
 /*box 6 start*/
 .box6{
     padding:40px;
