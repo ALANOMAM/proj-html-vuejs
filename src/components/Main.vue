@@ -3,6 +3,20 @@ export default{
    name:"Main",
   data(){
     return{
+        latestBlogs:[
+           {
+
+           },
+
+           {
+
+           },
+           
+           {
+
+           }
+
+        ]
 
     }
   }
@@ -82,6 +96,43 @@ export default{
 </div>
 <!--box 5 end-->
 
+<!--box 6 start-->
+<div class="box6">
+<div>
+    <span>READ FOR MORE JOYMENT</span>
+    <h2>Latest From Our Blogs</h2>
+</div>
+
+<div class="artist-box">
+
+<div class="artists">
+<img src="../../public/images/artist-blog-03-480x325.jpeg" alt="">
+<span>ARTIST</span>
+<P>Brush Strokes Energize Trees in Painting</P>
+
+<div class="stats">
+<span><i class="fa-regular fa-calendar"></i> May 15,2020</span>
+<span><i class="fa-regular fa-eye"></i> 688 views</span>
+</div>
+</div>
+
+<div class="artists">
+<img src="../../public/images/artist-blog-03-480x325.jpeg" alt="">
+<span>ARTIST</span>
+<P>Brush Strokes Energize Trees in Painting</P>
+
+<div class="stats">
+<span><i class="fa-regular fa-calendar"></i> May 15,2020</span>
+<span><i class="fa-regular fa-eye"></i> 688 views</span>
+</div>
+</div>
+
+</div>
+
+
+
+</div>
+<!--box 6 end-->
 
 
 </div>
@@ -238,5 +289,31 @@ export default{
    
 }
 /*box 5 end*/
+/*------------------------------------------------------------------------------------------------------*/
+/*box 6 start*/
+.box6{
+
+    .artist-box{
+    display: flex;
+    justify-content: space-between;
+    .artists{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        img{
+            width: 250px;  
+        }
+
+        .stats{
+            display: flex;
+            gap: 30px;
+        }
+        
+    }
+   }
+}
+
+/*box 6 end*/
 
 </style>
