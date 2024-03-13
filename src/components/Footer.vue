@@ -9,6 +9,15 @@ export default{
 
   data(){
     return{
+        userEmail:'',
+        mailOutput:''
+    }
+  },
+
+  methods:{
+    message(){
+        /*console.log(this.userEmail)*/
+        this.mailOutput = this.userEmail
 
     }
   }
@@ -25,13 +34,15 @@ export default{
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  blanditiis autem, 
     numquam est! Distinctio ad modi ullam 
     deserunt voluptate officiis itaque nulla enim odit.</p>
+
+    
    <div>
-    <input type="search" placeholder="Enter your email">
-    <button>Subscribe</button>
+    <input type="search" placeholder="Enter your email" @keyup.enter="message()" v-model="userEmail">
+    <button @click="message()">Subscribe</button>
    </div>
-
+    <p :class="this.mailOutput.length == 0 ? '': 'mailConfirmVisible'" class="mailConfirmInvisible"> Thanks, we will be updating you using the mail: <span>{{this.mailOutput}}</span></p>
     </div>
-
+       
  </div>   
 
 
@@ -65,6 +76,14 @@ b
 </template>
 
 <style lang="scss" scoped>
+.mailConfirmInvisible{
+    color: black;
+    opacity: 0;
+}
+
+.mailConfirmVisible{
+    opacity:1;
+}
 
 /*top footer inizio*/
 .top-footer{

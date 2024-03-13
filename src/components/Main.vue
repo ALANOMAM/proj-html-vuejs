@@ -26,9 +26,37 @@ export default{
              description:"Connection Between Self-Portraits and Identity",
              date:" Feb 15,2022",
              views:"300 views"
-           }
+           },
+        ],
+       
+
+        latestOnlineCourses:[
+           {
+             image:"../../public/images/course-02-480x298.jpg",
+             price:"$40.00",
+             description:"Learning to Write as a Professional Author",
+             lessons:" 20 Lessons",
+             students:"50 Students"
+           },
+
+           {
+            image:"../../public/images/stock-full-hd-03-480x298.jpg",
+            price:"$20.00",
+            description:"Customer-centric Info-Tech Strategies",
+            lessons:" 26 Lessons",
+            students:"40 Students"
+           },
+
+           {
+            image:"../../public/images/stock-full-hd-04-480x298.jpg",
+            price:"$16.00",
+            description:"Open Programming Courses for Everyone: Python",
+            lessons:" 40 Lessons",
+            students:"60 Students"
+           },
 
         ]
+
 
     }
   }
@@ -83,6 +111,39 @@ export default{
 <!--box 2 end-->
 </div>
 <!--container end--> 
+
+
+<section class="section3">
+ <!--container start-->   
+ <div class="container">
+<!--box 3 start-->
+<div class="box3">
+<div class="titolo3">
+    <span>JOIN MAXCOACH AT BEST </span>
+    <h2>Latest Online <span class="mark">Courses</span></h2>
+</div>
+
+<div class="courses-box">
+
+<div v-for="course in latestOnlineCourses"  class="courses">
+<img :src="course.image" alt="">
+<span class="mark"><b>{{ course.price }}</b></span>
+<P>{{course.description }}</P>
+
+<div class="stats">
+<span> <i class="fa-regular fa-file"></i>  {{ course.lessons }}</span>
+<span> <i class="fa-regular fa-user"></i> {{ course.students }}</span>
+</div>
+</div>
+
+</div>
+
+</div>
+<!--box 3 end-->
+</div>
+<!--container end-->  
+</section>
+
 
 
 
@@ -270,8 +331,54 @@ padding:40px;
    
 }
 /*box 2 end*/
-/*------------------------------------------------------------------------------------------*/
 
+
+/*------------------------------------------------------------------------------------------------------*/
+.section3{
+    background-color:rgba(248, 248, 248, 1) ;
+}
+/*box 3 start*/
+.box3{
+    padding:40px;
+     .titolo3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+    .courses-box{
+     margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .courses{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        margin-bottom: 20px;
+        
+        p{
+            max-width: 250px;
+        }
+        
+        img{
+            width: 250px;  
+        }
+
+        .stats{
+            display: flex;
+            gap: 20px;
+        }
+        
+    }
+   }
+}
+
+/*box 3 end*/
+
+
+
+/*------------------------------------------------------------------------------------------*/
 /*box4 start*/
 .box4{
     padding:40px;
@@ -367,13 +474,15 @@ padding:40px;
      }
 
     .artist-box{
-    margin-top: 40px;
+     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     .artists{
         display: flex;
         flex-direction: column;
         gap:10px;
+        margin-bottom: 20px;
         
         p{
             max-width: 250px;
