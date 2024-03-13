@@ -3,6 +3,7 @@ export default{
    name:"Main",
   data(){
     return{
+
         latestBlogs:[
            {
              image:"../../public/images/artist-blog-03-480x325.jpeg",
@@ -30,7 +31,9 @@ export default{
         ],
        
 
-        latestOnlineCourses:[
+        courseSlides:[
+
+        [
            {
              image:"../../public/images/course-02-480x298.jpg",
              price:"$40.00",
@@ -55,11 +58,63 @@ export default{
             students:"60 Students"
            },
 
-        ]
+        ],
+
+
+        [
+           {
+             image:"../../public/images/course-02-480x298.jpg",
+             price:"$100.00",
+             description:"Social Media Manager",
+             lessons:" 10 Lessons",
+             students:"20 Students"
+           },
+
+           {
+            image:"../../public/images/stock-full-hd-03-480x298.jpg",
+            price:"$70.00 ",
+            description:"Data Analitics",
+            lessons:" 30 Lessons",
+            students:"30 Students"
+           },
+
+           {
+            image:"../../public/images/stock-full-hd-04-480x298.jpg",
+            price:"$16.00",
+            description:"Wordpress Developer",
+            lessons:" 40 Lessons",
+            students:"60 Students"
+           },
+
+        ],
+
+        ],
+
+        displayIndex: 0,
+
 
 
     }
+  },
+
+
+  methods:{
+    backward(){
+        this.displayIndex--
+
+        console.log("display 1")
+    },
+
+    forward(){
+        this.displayIndex++
+        console.log("display 2")
+    }
+
+
   }
+
+
+
 }
 </script>
 
@@ -123,9 +178,9 @@ export default{
     <h2>Latest Online <span class="mark">Courses</span></h2>
 </div>
 
-<div class="courses-box">
-
-<div v-for="course in latestOnlineCourses"  class="courses">
+<!--course box 1 start-->
+<div  v-for="(slide,index) in courseSlides" v-show="displayIndex === index"  class="courses-box" id="courseBox1">
+<div v-for="course in slide"  class="courses" >
 <img :src="course.image" alt="">
 <span class="mark"><b>{{ course.price }}</b></span>
 <P>{{course.description }}</P>
@@ -135,8 +190,27 @@ export default{
 <span> <i class="fa-regular fa-user"></i> {{ course.students }}</span>
 </div>
 </div>
-
 </div>
+<!--course box 1 end-->
+
+<!--course box 2 start-->
+<!--
+<div class="courses-box" id="courseBox2">
+<div v-for="course in courseSlides[1]"  class="courses" >
+<img :src="course.image" alt="">
+<span class="mark"><b>{{ course.price }}</b></span>
+<P>{{course.description }}</P>
+
+<div class="stats">
+<span> <i class="fa-regular fa-file"></i>  {{ course.lessons }}</span>
+<span> <i class="fa-regular fa-user"></i> {{ course.students }}</span>
+</div>
+</div>
+</div>
+-->
+<!--course box 2 end-->
+
+ <div class="selectButtons"> <span class="display1" @click="backward()"> 1 </span> <span class="display2" @click="forward()"> 2 </span> </div>
 
 </div>
 <!--box 3 end-->
@@ -345,6 +419,20 @@ padding:40px;
         flex-direction: column;
         align-items: center;
      }
+     
+    .selectButtons{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        gap: 20px;
+    }
+     #courseBox1{
+      border:2px solid green;
+     }
+
+     #courseBox2{
+        border:2px solid brown;
+    }
 
     .courses-box{
      margin-top: 40px;
