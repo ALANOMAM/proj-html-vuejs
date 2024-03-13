@@ -72,7 +72,7 @@ header{
 }
 
 .top-header{
-   /* border: 1px solid blue;*/
+    /*border: 1px solid blue;*/
     background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -81,7 +81,7 @@ header{
 /*nav start*/
 .nav{
     /*border:1px solid red;*/
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -96,9 +96,19 @@ header{
         list-style-type: none;
 
         li{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
             i{
                 font-size: 10px;
             }
+        }
+
+        li:hover{
+            background-color: gray;
+            border-radius: 5px;
+            color: white;
         }
 
     }

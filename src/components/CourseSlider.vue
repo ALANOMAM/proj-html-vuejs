@@ -41,7 +41,7 @@ export default{
 
 [
    {
-     image:"../../public/images/course-02-480x298.jpg",
+     image:"../../public/images/course-featured-image-01-480x298.jpg",
      price:"$100.00",
      description:"Social Media Manager",
      lessons:" 10 Lessons",
@@ -49,7 +49,7 @@ export default{
    },
 
    {
-    image:"../../public/images/stock-full-hd-03-480x298.jpg",
+    image:"../../public/images/stock-full-hd-11-670x450.jpg",
     price:"$70.00 ",
     description:"Data Analitics",
     lessons:" 30 Lessons",
@@ -57,7 +57,7 @@ export default{
    },
 
    {
-    image:"../../public/images/stock-full-hd-04-480x298.jpg",
+    image:"../../public/images/stock-full-hd-06-480x298.jpg",
     price:"$16.00",
     description:"Wordpress Developer",
     lessons:" 40 Lessons",
@@ -65,6 +65,39 @@ export default{
    },
 
 ],
+
+
+[
+   {
+     image:"../../public/images/artist-blog-03-480x325.jpeg",
+     price:"$200.00",
+     description:"Artist",
+     lessons:" 12 Lessons",
+     students:"24 Students"
+   },
+
+   {
+    image:"../../public/images/artist-blog-01-480x325.jpg",
+    price:"$700.00 ",
+    description:"Artist",
+    lessons:" 36 Lessons",
+    students:"3 Students"
+   },
+  
+   /*
+   {
+    image:"../../public/images/artist-blog-02-480x325.jpg",
+    price:"$18.00",
+    description:"Artist",
+    lessons:" 400 Lessons",
+    students:"60 Students"
+   }, */
+
+],
+
+
+
+
 
 ],
 /*course array end*/
@@ -116,7 +149,7 @@ export default{
 </div>
 
 <!--course box  start-->
-<div  v-for="(slide,index) in courseSlides" v-show="displayIndex === index"  class="courses-box" id="courseBox1">
+<div  v-for="(slide,index) in courseSlides" v-show="displayIndex === index"  class="courses-box" >
 <div v-for="course in slide"  class="courses" >
 <img :src="course.image" alt="">
 <span class="mark"><b>{{ course.price }}</b></span>
@@ -132,7 +165,11 @@ export default{
 
 
 
- <div class="selectButtons"> <span class="display1" @click="backward()"> 1 </span> <span class="display2" @click="forward()"> 2 </span> </div>
+ <div class="selectButtons"> 
+    <button class="display1" @click="backward()"> <i class="fa-solid fa-arrow-left"></i> PREVIOUS </button> 
+    <button class="display2" @click="forward()"> NEXT <i class="fa-solid fa-arrow-right"></i> </button> 
+</div>
+
 
 </div>
 <!--box 3 end-->
@@ -152,6 +189,10 @@ export default{
     margin-right: auto;
 }
 
+.mark{
+    color:rgba(32, 173, 150, 1)  ;
+}
+
 
 .section3{
     background-color:rgba(248, 248, 248, 1) ;
@@ -169,15 +210,21 @@ export default{
         display: flex;
         justify-content: center;
         padding-top: 20px;
-        gap: 20px;
-    }
-     #courseBox1{
-      border:2px solid green;
-     }
+        gap: 40px;
 
-     #courseBox2{
-        border:2px solid brown;
+        button{
+            padding: 10px 20px;
+            background-color:rgba(32, 173, 150, 1) ;
+            border: 1px solid rgba(32, 173, 150, 1);
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:active{
+            background-color: green;
+        }
     }
+
 
     .courses-box{
      margin-top: 40px;
