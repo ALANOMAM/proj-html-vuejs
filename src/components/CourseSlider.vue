@@ -183,7 +183,7 @@ export default{
 
 .container{
     color: black;
-    border:1px solid blue;
+    /*border:1px solid blue;*/
     max-width:930px;
     margin-left: auto;
     margin-right: auto;

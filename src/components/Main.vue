@@ -190,7 +190,7 @@ main{
 }
 .container{
     color: black;
-    border:1px solid blue;
+    /*border:1px solid blue;*/
     max-width:930px;
     margin-left: auto;
     margin-right: auto;
@@ -203,8 +203,7 @@ main{
 /*box1 start*/
 .box1{
     padding:40px;
-    
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
    background-image: url("../../public/images/maxcoach-shape-02.png"),url("../../public/images/maxcoach-shape-07.png");
    background-position: right bottom ,  center;
@@ -247,7 +246,7 @@ main{
 /*box 2 start*/
 .box2{
 padding:40px;  
- border: 1px solid red;
+ /*border: 1px solid red;*/
  padding-top: 30px;
  padding-bottom: 30px;
  background-image: url("../../public/images/maxcoach-shape-01.png"),url("../../public/images/maxcoach-shape-05.png");
@@ -288,7 +287,7 @@ padding:40px;
 /*box4 start*/
 .box4{
     padding:40px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     
 /*left side start*/
@@ -337,7 +336,7 @@ padding:40px;
 /*box 5 start*/
 .box5{
  padding:40px;
- border: 1px solid red;
+ /*border: 1px solid red;*/
  padding-top: 30px;
  padding-bottom: 30px;
  background-image: url("../../public/images/maxcoach-shape-01.png"),url("../../public/images/maxcoach-shape-05.png"),url("../../public/images/maxcoach-shape-08.png");
